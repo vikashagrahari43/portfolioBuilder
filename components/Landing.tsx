@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { Menu, X, Sparkles, Palette, Code, Zap, Smartphone, Rocket, Link2 } from 'lucide-react';
+import Link from 'next/link';
 
 interface Feature {
   icon: React.ReactNode;
@@ -85,9 +86,8 @@ const LandingPage: React.FC = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-10">
-              <a href="#features" className="text-zinc-400 hover:text-white transition-colors font-medium">Features</a>
-              <a href="#templates" className="text-zinc-400 hover:text-white transition-colors font-medium">Templates</a>
-              <a href="#pricing" className="text-zinc-400 hover:text-white transition-colors font-medium">Pricing</a>
+             <Link href={"login"} >Login</Link>
+                <Link href={"signup"} >Signup</Link>
               <button className="bg-white text-black px-6 py-2.5 rounded-lg font-semibold hover:bg-zinc-200 transition-all">
                 Get Started
               </button>
